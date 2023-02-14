@@ -257,6 +257,7 @@ public class InteractableView extends ViewGroup implements PhysicsAnimator.Physi
                 if(this.dragBehavior!=null){
                     this.dragBehavior.setAnchorPoint(new PointF(newX,newY));
                 }
+                listener.onDrag("move", newX, newY, "");
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
